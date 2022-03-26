@@ -1,0 +1,111 @@
+body {
+    background-image: url("../images/mario.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+a {
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3rem;
+    color: #EEEEEE;
+    text-shadow: 1px 1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        -1px -1px 0 #000000,
+        1px 0px 0 #000000,
+        0px 1px 0 #000000,
+        -1px 0px 0 #000000,
+        0px -1px 0 #000000;
+    --c: #8deaf7;
+    background: 
+      conic-gradient(from -135deg at 100%  50%,#8deaf7  90deg,#8deaf7 0) 0    var(--p,0%),
+      conic-gradient(from -135deg at 1.2em 50%,#8deaf7 90deg,#8deaf7  0) 100% var(--p,0%),
+      var(--c);
+    -webkit-background-clip: text;
+            background-clip: text;
+    background-size: var(--s, 0%) 200%;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: .4s ease-in, background-position 0s;
+  }
+  a:before {
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:-1;
+    background: 
+      conic-gradient(from -135deg at 100%  50%,var(--c) 90deg,#8deaf7 0) 0    var(--p,0%),
+      conic-gradient(from -135deg at 1.2em 50%,#8deaf7 90deg,var(--c) 0) 100% var(--p,0%);
+    background-size: inherit;
+    background-repeat: no-repeat;
+  }
+  a:hover {
+    --p: 100%;
+     /* it should be .6em (1.2em/2) but we use a litte bigger to avoid gaps */
+    --s: calc(50% + .61em);
+  }
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bolder;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 1px 0px 1px #000000,
+    0px 1px 1px #131212,
+    2px 1px 1px #000000,
+    1px 2px 1px #131212,
+    3px 2px 1px #000000,
+    2px 3px 1px #131212,
+    4px 3px 1px #000000,
+    3px 4px 1px #131212,
+    5px 4px 1px #000000,
+    4px 5px 1px #131212,
+    6px 5px 1px #000000,
+    5px 6px 1px #131212,
+    7px 6px 1px #000000;
+    color: #FFFFFF;
+}
+
+h2,
+h3,
+p {
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        -1px -1px 0 #000000,
+        1px 0px 0 #000000,
+        0px 1px 0 #000000,
+        -1px 0px 0 #000000,
+        0px -1px 0 #000000;
+        color: #EEEEEE;
+    background: #9ce8f2;
+    border-top: 1px solid #00000073;
+    border-left: 1px solid #131212bd;
+    border-bottom: 4px solid #131212bd;
+    border-right: 4px solid #00000073;
+    margin-top: -1rem;
+    margin-left: 40%;
+    width: 20%;
+}
+
+h3 {
+    margin-top: 3rem;
+}
+
+
+div { 
+    margin-top: 40%;
+    padding: 3% 4% 3% 4%;
+    background-color: #9ce8f294;
+    text-align: center;
+}
